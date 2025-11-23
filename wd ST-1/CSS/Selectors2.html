@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Selectors: CSS Combinators</title>
+    <style>
+    div p{
+        color: black;
+    }
+    div> p{
+        background-color: brown;
+    }
+    div +p{
+        background-color: rgb(198, 226, 43);
+    }
+    a:hover{
+        color: blueviolet;
+    }
+    a:visited{
+        color: rgb(0, 195, 255);
+    }
+    ::marker
+    ul{
+        list-style: none;
+        display: flex;
+    }
+    ul li{
+        margin: 10px;
+        border-right: 1px;
+        padding-right: 20px;
+
+    }
+    ul li:first-child{
+        border-right: 0px;
+    }
+    ul li::first-letter{
+        font: size 25px;
+        color:lawngreen
+    }
+    .para::first-letter{
+        color: red;
+    }
+    .para::after{
+        content:"Read More";
+        color: blue;
+        font-size: 30px;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <!..first div..>
+    <div class="text">
+        <h1>Hello ABES</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vero illum odio? Ex assumenda autem
+             nemo esse aspernatur ducimus
+              velit nisi sint, vero voluptatem dolores quisquam nesciunt fugit voluptates quibusdam.</P>
+
+
+    </div>
+    <!..second div..>
+    <div>
+    <p>Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Perspiciatis repellendus, quam doloribus obcaecati, repudiandae 
+        voluptatibus unde, cum iste aperiam repellat ut?
+         Nam laboriosam iste tempore laudantium impedit fugiat eius rem.</p>
+    </div>
+    <div>
+        <a href="https//abes.ac.in"
+            <h3>third para</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Cupiditate est inventore quis architecto dolores reprehenderit 
+                asperiores amet laborum! Dolores beatae temporibus necessitatibus
+                 aperiam laudantium rem sunt facere obcaecati asperiores ratione?
+            </p>
+        </div>
+        <div>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem id saepe inventore fugiat blanditiis sed cumque
+                 expedita eum, veniam quod, aliquid molestias, quo facere! Facere exercitationem nihil asperiores doloremque harum?
+                </p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Ipsam consequuntur, ratione accusamus repellat alias dolore. Nisi natus non adipisci, facere quos unde rem deleniti animi reprehenderit veritatis, inventore molestias numquam?
+        </p>
+        <ul>
+            <li>HOME</li>
+            <li>NAME</li>
+            <li>CONTACT</li>
+            <li>EMAIL</li>
+            <li>CLASS</li>
+        </ul>
+
+        
+</body>
+</html>

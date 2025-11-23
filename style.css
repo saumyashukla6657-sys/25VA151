@@ -1,0 +1,37 @@
+body{
+    margin:0px;
+    padding: 0;
+    background-color:whitesmoke;
+    background-image: url('download.jpg');
+    background-repeat :no-repeat;
+    background-position: top-left;
+
+
+}
+html*{
+    margin-bottom: 90px;
+    padding-bottom:100px ;
+    box-sizing: border-box;
+}
+p{
+    margin: bottom 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 100;
+    font-style: italic;
+    color: blue;
+    text-align: right;
+    text-decoration:underline ;
+    text-transform: uppercase;
+    text-shadow:1px,5px,#f04;
+    
+
+}
+#para{
+    color: darkmagenta;
+    display: inline;
+}
+#ul li{
+    float:left; 
+    margin:30px;
+}
